@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" type="text/css"/>
     <title>User Manager Application</title>
 </head>
 <body>
-<div align="center">
+<div class="container-fluid text-center">
 <h1>Welcome to User Manager Application</h1>
-<h2><a href="/users">Manage Users</a></h2>
+<a class="h3" th:href="@{/users}">Manage Users</a>
 </div>
 </body>
 </html>
