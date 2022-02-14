@@ -1,4 +1,4 @@
-package com.robgro.usermanager.user.controller;
+package com.robgro.userManager.user.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

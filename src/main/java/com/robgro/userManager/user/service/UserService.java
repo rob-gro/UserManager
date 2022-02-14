@@ -1,7 +1,7 @@
-package com.robgro.usermanager.user.service;
+package com.robgro.userManager.user.service;
 
-import com.robgro.usermanager.user.User;
-import com.robgro.usermanager.user.UserRepository;
+import com.robgro.userManager.user.User;
+import com.robgro.userManager.user.UserRepository;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -15,5 +15,9 @@ public class UserService {
 
     public Iterable<User> listAll() {
         return userRepository.findAll();
+    }
+
+    public void save(User user) {
+        userRepository.save(user);
     }
 }

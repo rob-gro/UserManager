@@ -5,13 +5,19 @@
     <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" type="text/css"/>
     <title>Manage Users</title>
 </head>
-<body>
+<body class="bg-secondary">
 <div class="container-fluid text-center">
     <h2>Manage Users</h2>
 </div>
 <div class="m-2 text-center">
     <a class="h3" th:href="@{/users/new}">Add New User</a>
 </div>
+
+<!--/*@thymesVar id="message" type="com.robgro.userManager.user.controller.UserController"*/-->
+<div th:if="${message}" class="alert alert-success">
+    [[${message}]]
+</div>
+
 <div>
     <table class="table table-dark table-bordered">
         <thead class="thead-dark text-center">

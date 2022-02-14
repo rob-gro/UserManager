@@ -1,4 +1,4 @@
-package com.robgro.usermanager.user;
+package com.robgro.userManager.user;
 
 import org.springframework.data.repository.CrudRepository;
 
